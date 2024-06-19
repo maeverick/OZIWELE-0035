@@ -143,25 +143,6 @@ const readAll = () => {
     
      const search = document.querySelector("#search")
 
-     const newTable = () =>{
-        const newData = searchTable(search.value , data)
-        buildData(newData);
-     }
-    search.addEventListener('keyup', newTable)
-
-
-const searchTable= (identity, item) => {
-     let filteredData =[]
-     for (obj in item){
-        identity = identity.toLowerCase()
-        const nam = obj.fullname.toLowerCase()
-
-        if(nam.includes(identity)){
-            filteredData.push(obj)
-        }
-     }
-     return filteredData
-}
 
 
      const delet = (Id) => {
