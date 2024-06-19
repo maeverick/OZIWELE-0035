@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="readAll()">
+   <div class="container">
+    <div class="form_container">
+     <div class="form">
+        <form action=""  id="create"  >
+            <h2><span class="line">Enter</span> <br>Information</h2>
+            <div><input type="text" name="fullname" class="fullname" placeholder="Full name" ></div>
+            <div><input type="email" name="email" class="email" placeholder="email"></div>
+            <div><input type="tel" name="phone" class="phone" placeholder="Phone Number"></div>
+           
+            <div>
+                <label for="dept">Department:</label>
+                <select name="" class="dept drop">
+                    <option ></option>
+                    <option value="Engineering / developement">Engineering / developement</option>
+                    <option value="Data scientist">Data scientist</option>
+                    <option value="Quality assurance & testing">Quality assurance & testing</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Human resources">Human resources</option>
+                    <option value="Sale">Sale</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="customer Support">customer Support</option>
+                    <option value="Research and developement">Research and developement</option>
+                    <option value="Operations">Operations</option>
+                </select>
+            </div>
+            <div>
+                <label for="job">Job title:</label>
+                <select name="job" class="job drop">
+                    <option ></option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="data scientist">data scientist</option>
+                    <option value="Product manager">Product manager</option>
+                    <option value="Cybersecurity Analyst">Cybersecurity Analyst</option>
+                    <option value="ux/ui designer">ux/ui designer</option>
+                    <option value="Backend Developer">Backend Developer</option>
+                    <option value="frontend Developer">frontend Developer</option>
+                    <option value="Project manager">Project manager</option>
+                    <option value="cloud architect">cloud architect</option>
+                    <option value="Business analyst">Business analyst</option>
+                </select>
+            </div>
+            <div>
+                <label for="exp">date of Birth:</label>
+                <input type="date" name="" class="DoB"  placeholder="Date Of birth"></div>
+            
+            <!-- <div><input type="text" name="phone" class="experience" placeholder=" Work experience(how many years)" inputmode="numeric" required></div> -->
+            <div>
+                <label for="exp">working experience:</label>
+                <select name="" class="experience drop">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        <div class="btn">
+            <button type="button" class="fill">Upload</button>
+            <button type="button" class="che"> review</button>
+        </div>
+            
+        </form>
+
+        <form action="" id="update">
+            <h2><span class="line">Update</span><br> Information</h2>
+            <div><input type="text" name="id" class="id" hidden ></div>
+            <div><input type="text" name="fullname" class="ufullname" placeholder="Full name" ></div>
+            <div><input type="email" name="email" class="uemail" placeholder="email"></div>
+            <div><input type="tel" name="phone" class="uphone" placeholder="Phone Number"></div>
+            <div>
+                <label for="dept">Department:</label>
+                <select name="" class="udept drop">
+                    <option ></option>
+                    <option value="Engineering / developement">Engineering / developement</option>
+                    <option value="Data scientist">Data scientist</option>
+                    <option value="Quality assurance & testing">Quality assurance & testing</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Human resources">Human resources</option>
+                    <option value="Sale">Sale</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="customer Support">customer Support</option>
+                    <option value="Research and developement">Research and developement</option>
+                    <option value="Operations">Operations</option>
+                </select>
+            </div>
+            <div>
+                <label for="job">Job title:</label>
+                <select name="job" class="ujob drop">
+                    <option ></option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="data scientist">data scientist</option>
+                    <option value="Product manager">Product manager</option>
+                    <option value="Cybersecurity Analyst">Cybersecurity Analyst</option>
+                    <option value="ux/ui designer">ux/ui designer</option>
+                    <option value="Backend Developer">Backend Developer</option>
+                    <option value="frontend Developer">frontend Developer</option>
+                    <option value="Project manager">Project manager</option>
+                    <option value="cloud architect">cloud architect</option>
+                    <option value="Business analyst">Business analyst</option>
+                </select>
+            </div>
+
+            <div><label for="exp">Date of Birth:</label> <input type="date" name="" class="uDoB" placeholder="Date Of birth"></div>
+           
+            <div>
+                <label for="exp">working experience:</label>
+                <select name="" class="uexperience drop">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            <div class="btn">
+                <button type="button"  class="review">Update</button>
+
+                <button type="button" class="che2"> review</button>
+            
+            </div>
+        </form>
+     </div>
+
+                
+
+
+          <div class="table">
+            <div class="add">
+                <button class="input">Add</button>
+            </div>
+            <div><input type="text" id="search" placeholder="search"></div>
+            <table>
+                <thead>
+                        <th id="Employee ID"></th>
+                        <th>full name</th>
+                        <th>email</th>
+                        <th>Phone number</th>
+                        <th>department</th>
+                        <th>job title</th>
+                        <th>Date of birth</th>
+                        <th>date of hiring</th>
+                        <th>salary</th>     
+                </thead>
+                <tbody class="tbody">
+                   
+                </tbody>
+                </table>
+          </div>
+    </div>
+   </div>
+<script src="script.js"></script>
+</body>
+</html>

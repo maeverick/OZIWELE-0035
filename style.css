@@ -1,0 +1,116 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+form{
+    padding: 50px;
+}
+form h2{
+    font-size: 3em;
+}
+form input, .drop{
+    width: 100%;
+    padding: 20px 40px 20px 7px;
+    margin: 10px 0;
+    font-size: 1.02em;
+    border-style: none ;
+    border-style: none none solid none;
+    outline: none;
+}
+.drop{
+    width: 100%;
+    text-transform: capitalize;
+}
+form input:focus, .drop:focus, tr:hover{
+    box-shadow: 2px 2px 15px   rgb(111, 231, 165);
+}
+form input::placeholder{
+    text-transform: capitalize;
+    font-size: 1.02em;
+}
+.signUp h2{
+  padding: 15px 0;
+font-size: 2rem;
+
+}
+.line{
+    position: relative;
+}
+.line::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: orangered;
+    width: 100%;
+    height: 7px;
+    border-radius: 20px;
+}
+
+label{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+th{
+    background-color: silver;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    width: auto;
+}
+button{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border: none;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    border: none;
+    margin-top: 20px;
+    height: 100%;
+}
+button:nth-child(2){
+float: right;
+}
+button:hover{
+    transition: 0.5s ease;
+    background-color:orangered;
+}
+#create ,  #update{
+    display: none;
+}
+#create {
+    display: block;
+}
+.form{
+    display:block;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+.table{
+    display: none;
+}
+ table{
+    width: 100%;
+ }
+ tr{
+    text-align: center;
+    border: 1px solid black;
+ }
+
+
+ #search{
+    width: 80%;
+    padding: 20px 40px 20px 7px;
+    margin: 10px 0 10px 20px;
+ }
+ #search::placeholder{
+    text-transform: capitalize;
+    font-size: 1.02em;
+}
+
+ 
+ 
+
